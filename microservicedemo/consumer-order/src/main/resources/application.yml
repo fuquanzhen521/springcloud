@@ -1,0 +1,7 @@
+server:
+  port: 8900  #程序启动后的端口，也就是 tomcat 的端口，我们可以自己定义
+spring:
+  application:
+    name: customer-order  #程序名字，也就是别名
+user:
+  url: http://localhost:7900/user/

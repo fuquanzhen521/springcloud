@@ -1,0 +1,12 @@
+server:
+  port: 7900  #程序启动后的端口，也就是 tomcat 的端口，我们可以自己定义
+spring:
+  application:
+    name: provider-user  #程序名字，也就是别名
+eureka:
+  client:
+    registerWithEureka: false #服务注册，true表示将自己注册到eureka服务中
+    fetchRegistry: false  #服务发现，true表示自己从eureka中获取注册信息
+    serviceUrl:
+      defaultZone: http://localhost:10000/eureka/
+    enabled: true
